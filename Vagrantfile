@@ -33,7 +33,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "shell", inline: "echo '[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx' > /home/vagrant/.bash_profile"
 
     # Install necessary system software
-    config.vm.provision "shell", inline: "sudo apt-get install -y firefox curl"
+    config.vm.provision "shell", inline: "sudo apt-get install -y firefox curl file-roller"
 
     # Conda installation, with necessary packages
     config.vm.provision "shell", inline: $conda_installation, privileged: false
