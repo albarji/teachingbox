@@ -7,6 +7,7 @@ Includes
 * Anaconda Python 3
 * seaborn
 * keras
+* tensorflow
 * Web browser (firefox)
 
 ## Prerequisites

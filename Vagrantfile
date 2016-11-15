@@ -39,7 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "shell", inline: $conda_installation, privileged: false
 
     # Install other required conda packages
-    config.vm.provision "shell", inline: "/home/vagrant/anaconda3/bin/conda install -y seaborn", privileged: false
+    config.vm.provision "shell", inline: "/home/vagrant/anaconda3/bin/conda install -y seaborn tensorflow", privileged: false
 
     # Install pip packages (not available in conda)
     config.vm.provision "shell", inline: "/home/vagrant/anaconda3/bin/pip install keras", privileged: false
