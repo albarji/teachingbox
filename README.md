@@ -7,7 +7,6 @@ Includes
 * Ubuntu Trusty 64 (14.04)
 * Lubuntu desktop with Firefox web browser
 * Anaconda3-4.3.1
-* seaborn
 * keras
 * tensorflow
 
@@ -24,7 +23,7 @@ Run
 
 in the folder where you downloaded or cloned the files from this repository, and vagrant should take care of building the virtual machine. Make sure you have a fast and stable internet connection!
 
-During the build a window will pop up asking username and password. Ignore that window for the time being, and when Vagrant has finished building, close that window.
+During the build a window will pop up asking username and password. Ignore that window for the time being, and when Vagrant has finished building, close that window. Don't select the "save machine status" option, as we want to force a full restart of the virtual machine.
 
 ## Usage
 
@@ -34,7 +33,7 @@ You can start the virtual machine from the VirtualBox application: it should app
 
 again in the folder where you downloaded or cloned the contents of this repo.
 
-Once the Graphical User Interface shows up, select the user "vagrant" and type the password "vagrant".
+Once the Graphical User Interface shows up, select the user "vagrant" and type the password "vagrant". If you are asked whether you want to update to a new Ubunbu distribution, don't do it!
 
 ### Configuring keyboard layout
 
@@ -54,4 +53,6 @@ If you are not using an US keyboard it is recommended that you change the machin
 
 * Open a command line terminal following the steps above.
 * Run "jupyter notebook" on the command line.
+
+This should open the Jupyter notebook on a browser inside the virtual machine. The machine is also configured to bind the Jupyter port to the local host, so you can also connect to it in from your local browser by typing the url http://localhost:8888 .
 
